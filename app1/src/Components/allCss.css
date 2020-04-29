@@ -1,0 +1,17 @@
+#loginBox{
+    display : inline-block;
+    position: fixed;
+    right: 50px;
+    top : 10px;
+    color: navy;
+}
+
+#descMain{
+    margin-top: 50px;
+    text-align: center;
+}
+
+li{
+    display:inline;
+}
+
