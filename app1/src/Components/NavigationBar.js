@@ -6,10 +6,19 @@ class Navigation extends Component{
     return (
       <nav>
           <ul id='navi'>
-              <li class="navi-item"><a class="navi-a" href="/">ARGOS</a></li>
-              <li class="navi-item"><a class="navi-a" href="/">About</a></li>
-              <li class="navi-item"><a class="navi-a" href="/">Board</a></li>
-              <li class="navi-item"><a class="navi-a" href="/">ARGOS Seminar</a></li>
+              <li class="navi-item"><a class="navi-a" href="/" onClick={function(e){
+                e.preventDefault();
+                this.props.onChangeMode('welcome');
+              }.bind(this)}>ARGOS</a></li>
+              <li class="navi-item"><a class="navi-a" href="/"  onClick={function(e){
+                e.preventDefault();
+                this.props.onChangeMode('about');
+              }.bind(this)}>About</a></li>
+              <li class="navi-item"><a class="navi-a" href="/"  onClick={function(e){
+                e.preventDefault();
+                this.props.onChangeMode('board');
+              }.bind(this)}>Board</a></li>
+              <li class="navi-item"><a class="navi-a" href="https://sites.google.com/view/argos-cnu">ARGOS Open Page</a></li>
           </ul>
       </nav>
     );

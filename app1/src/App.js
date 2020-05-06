@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Top from './Components/Top';
 import DescMain from './Components/DescMain';
 import Navi from './Components/NavigationBar';
-
+import Board from './Components/Board';
 
 class App extends Component {
   constructor(props){
@@ -13,8 +13,8 @@ class App extends Component {
   }
   getComponent(){
     var _compo=null;
-    if(this.state.mode==='welcome'){
-      _compo=<Navi></Navi>
+    if (this.state.mode === "board"){
+      _compo=<Board></Board>
     }
     else{
       _compo=<DescMain></DescMain>
@@ -29,6 +29,10 @@ class App extends Component {
             mode:_mode
           })
         }.bind(this)}></Top>
+        <Navi onChangeMode={function(_mode){
+        this.setState({
+          mode:_mode
+        })}.bind(this)}></Navi>
         {this.getComponent()}
       </div>
     );
