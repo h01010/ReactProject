@@ -1,17 +1,39 @@
+
 #loginBox{
     display : inline-block;
     position: fixed;
-    right: 50px;
-    top : 10px;
+    right: 60px;
+    top : 20px;
     color: navy;
 }
 
 #descMain{
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
-li{
-    display:inline;
+#navi{
+    background-color: darkslateblue;
+    list-style-type: none;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    overflow:hidden;
+}
+.navi-item{
+    float : left;
+}
+
+.navi-a{
+    display: block;
+    text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+    background-color: darkslateblue;
+    padding : 10px 20px 10px 20px;
+    color: white;
+}
+.navi-a:hover{
+    background-color: darkgrey;
+    color:black
 }
 

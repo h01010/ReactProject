@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
+import './allCss.css';
 
 class Navigation extends Component{
   render(){
     return (
-      <div id='navi'>
-          <ul>
-              <li><a href="/">ARGOS</a></li>
-              <li><a href="/">About</a></li>
-              <li><a href="/">Board</a></li>
-              <li><a href="/">ARGOS Seminar</a></li>
+      <nav>
+          <ul id='navi'>
+              <li class="navi-item"><a class="navi-a" href="/">ARGOS</a></li>
+              <li class="navi-item"><a class="navi-a" href="/">About</a></li>
+              <li class="navi-item"><a class="navi-a" href="/">Board</a></li>
+              <li class="navi-item"><a class="navi-a" href="/">ARGOS Seminar</a></li>
           </ul>
-      </div>
+      </nav>
     );
   }
 }

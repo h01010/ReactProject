@@ -13,6 +13,7 @@ class Top extends Component{
               e.preventDefault();
               alert("submit!!");
               this.props.onChangeMode('welcome');
+              document.getElementById("loginBox").style.display="none";
             }.bind(this)}
         >
           <table>
